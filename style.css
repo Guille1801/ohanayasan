@@ -397,21 +397,30 @@ i{
 
 /*prueba */
 
+.bodyproduct{
+    background-color: #f0f0f0;
+}
+
 .supermenu{
     width: 100%;
 }
 
 .flower-menu {
     max-width: 100%;
-    
     height: auto;
     display: flex;
     justify-content: center; /* Center the products horizontally */
+    margin-bottom: 30px;
 }
 
 .mainmenu h2 {
     text-align: center;
     margin-bottom: 10px;
+}
+
+#colorbackground{
+    background-color: #F7A4A4;
+    padding: 20px;
 }
 
 .responsive-menu{
@@ -421,6 +430,8 @@ i{
 .mainmenu {
     align-items: center;
     width: 100%;
+    margin-top: 30px;
+    background-color: #f0f0f0;
 }
 
 .products-container {
@@ -468,67 +479,212 @@ i{
     margin-bottom: 20px;
 }
 
-.lateral-menu {
+/*products bar navigation*/
+
+.headerproduct ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+  }
+  
+  .headerproduct a {
+    color: #F74D4A;
+    text-decoration: none;
+  }
+  
+  .logo {
+    margin: 0;
+    font-size: 1.45em;
+}
+.main-nav {
+    margin-top: 5px;
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 10px;
+    flex-wrap: wrap;
+}
+.logo a, .main-nav a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+}
+.main-nav a {
+    color: black;
+    font-size: 10px;
+}
+.main-nav a:hover {
+    color: #F74D4A;
+}
+
+/*About Us*/
+
+.principalsection-1{
+    background-image: url("asset/aboutus-image.jpg");
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    position: relative; /* Para posicionar el overlay */
+}
+
+.about-usbg {
+    height: 300px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Aligns items in a column */
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    text-align: center; /* Ensures text is centered */
+}
+
+.about-usbg h2 {
+    text-transform: uppercase;
+    font-size: 3.5em;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 100;
+    text-shadow: 2px 0 #000;
+}
+
+.about-usbg h3 {
+    color: #000;
+    margin-top: 20px;
+}
+
+.mainabout{
+    margin-top: -50px;
+    height: 100px;
     width: auto;
-    margin-right: 30px;
-    /*position: fixed;
-    left: 0;*/
-    position: relative;
+    align-content: center;
+    margin-bottom: 20px;
+    
+}
+
+.mainabout h3, h4{
+    color: #000;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: center;
+}
+
+.mainabout h4{
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
 }
 
-.cat-menu{
-    margin-bottom: 10px;
-    position: absolute;
-
+.mainabout2{
+    display: flex;
+    width: 100%; /* Ajusta el ancho del contenedor en dispositivos móviles */
+    text-align: justify;
+    height: auto;
+    margin-left: 0;
+    align-items: center; /* Centra el contenido dentro del contenedor */
+    padding: 0 20px; /* Añade espacio a los lados para evitar que el contenido esté pegado a los bordes */   
 }
 
-.lateral-menu ul{
-    list-style-type: none; /* Quita los marcadores de lista */
-    padding: 0; /* Elimina el espacio interior de la lista */
-    width: 100%;
-    margin-top: 50px;
-    text-align: center;    
-   
+.aboutusimg{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: end;  
 }
 
-.lateral-menu ul li{
-    padding: 10px 0; /* Espaciado entre elementos */
-    border-bottom: 1px solid #ccc; /* Línea divisoria entre elementos */
-    transition: background-color 0.3s ease; /* Transición suave durante 0.3 segundos */
-    display: inline-block;
-    margin-right: 20px; /* Espaciado entre elementos */
+.aboutdescription{
+    text-align: justify;
+    max-width: 100%;
+    padding: 0 20px; /* Añade espacio a los lados para evitar que el contenido esté pegado a los bordes */  
+    padding: 100px;
 }
 
-.lateral-menu ul li a{
-    color: #111010;
+.aboutusimg img{
+   width: 450px; 
 }
 
-.lateral-menu ul li:hover{
-    background-color: #E55473; /* Cambia el color de fondo al pasar el cursor */
-    border-radius: 10%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra al pasar el cursor */
-    color: #fff; /* Cambia el color del texto al pasar el cursor */
-
-
+.important{
+    color: red;
 }
 
-.lateral-menu ul li:first-child {
-    font-weight: bold; /* Hace que el primer elemento sea negrita */
+.storeinfo{
+    margin-bottom: 30px;
+}
+
+.storetitle{
+    display: flex;
+    align-items: center;
+}
+
+.storetitle img{
+    width: 50px;
+}
+
+.store-hours{
+    margin-top: 14px;
+    list-style: none;
+    .store-hour{
+      margin-bottom: 1px;
+    }
+    .day{
+      float: left;
+      width: 107px;
+      font-weight: bold;
+    }
   }
 
-.lateral-menu ul li:last-child{
-   border-bottom: none; /* Elimina la línea divisoria del último elemento */
+.firstinfo{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Cambiar a fila si prefieres que los elementos estén en una fila */
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto dentro de los elementos */
+    padding: 20px; /* Añade algo de relleno alrededor del contenido */
 }
 
+
+/* Header Styles */
+.headerproduct {
+    margin-top: 100px;
+    padding-top: .5em;  
+    padding-bottom: .5em;
+    background-color: #F7A4A4;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .list-imagecontainer{
     display: flex;
 }
+
+/*scroll up*/
+.scroll-top {
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.336);
+    /* hover effect default */
+    transform: scale(0.9);
+    transition: 0.3s ease-in-out transform;
+    /* for centering the icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .scroll-top svg {
+    width: 50%;
+    color: black;
+    pointer-events: none;
+  }
+  
+  .scroll-top:hover {
+    transform: scale(1);
+  }
 
 
 /*Payment Section*/
@@ -846,19 +1002,23 @@ iframe{
         font-size: 30px;
         text-align: center;
     }
+
+    .title18{
+        text-align: center;
+    }
     
     .banner-img img {
         max-width: 100%; /* Ensures the image is fully visible on small screens */
         height: auto; /* Maintains the aspect ratio of the image */
     }
     
-    .banner-img {
+    .banner-img, .aboutusimg {
         width: 100%; /* Makes the image take up the full width of the container */
         justify-content: center; /* Centers the image within the container */
         display: flex; /* Ensures justify-content works as expected */
     }
     
-    .banner-container {
+    .banner-container, .mainabout2 {
         display: flex;
         flex-direction: column; /* Cambia el orden de los elementos en pantallas pequeñas */
         width: 100%; /* Ajusta el ancho del contenedor en dispositivos móviles */
@@ -870,7 +1030,7 @@ iframe{
         padding: 0 20px; /* Añade espacio a los lados para evitar que el contenido esté pegado a los bordes */
     }
     
-    .banner-description {
+    .banner-description, .aboutdescription {
         text-align: justify;
         width: 100%;
         padding: 0 20px; /* Añade espacio a los lados para evitar que el contenido esté pegado a los bordes */
@@ -983,5 +1143,9 @@ iframe{
 
     .footer-description{
         text-align: center;
+    }
+
+    .mainabout2{
+        display: flex;
     }
 }

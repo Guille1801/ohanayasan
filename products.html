@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <script src="scripts.js"></script>
 </head>
-<body>
+<body class="bodyproduct">
     <header>
         <!-- Navigation Bar -->
         <nav class="navbar">    
             <div class="navbar-logo">
-                <img src="asset/logo.png"   alt="Logo-Img">
+                <img src="asset/iconohana-removebg-preview.png"   alt="Logo-Img">
                 <a href="index.html"><h1>Ohanayasan</h1></a>
             </div>
             <div class="menu-icon" id="menu-icon">
@@ -24,24 +24,18 @@
             <div class="navbar-menu" id="nav-links">
                 <ul>
                     <li class="nav-item"><a href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="#">About Us</a></li>
-                    <li class="nav-item"><a href="#">Products</a></li>
+                    <li class="nav-item"><a href="about-us.html">About Us</a></li>
+                    <li class="nav-item"><a href="products.html">Products</a></li>
                     <li class="nav-item"><a href="contact.html">Contact Us</a></li>
-                    <li class="nav-lastitem"><a href="#"><i class="fa-solid fa-bag-shopping fa-fade"></i> Cart</a></li>
+                    <li class="nav-lastitem"><a href="payment.html"><i class="fa-solid fa-bag-shopping fa-fade"></i> Order</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <div class="shopping-menu margin">
-        <h1>Products</h1>
-    </div>
-
-    <section class="products-container">
-        <div class="lateral-menu">
-            <h2 class="cat-menu">Categories</h2>
-            <ul>
-                <li><a href="#newyear">New Year</a></li>
+    <header class="headerproduct">
+      <ul class="main-nav">
+          <li><a href="#newyear">New Year</a></li>
                 <li><a href="#valentine">Valentine's Day</a></li>
                 <li><a href="#whiteday">White Day</a></li>
                 <li><a href="#spring">Spring</a></li>
@@ -50,9 +44,18 @@
                 <li><a href="#">Summer</a></li>
                 <li><a href="#">Age Day</a></li>
                 <li><a href="#">Autumn</a></li>
-                <li><a href="#">Christmas</a></li>
-            </ul>
-        </div>
+                <li class="finalxd"><a href="#">Christmas</a></li>
+      </ul>
+	</header>
+
+    <div class="scroll-top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+        </svg>
+      </div>
+
+    <section class="products-container">
+        
 
         <div class="supermenu">
             <div class="mainmenu">
@@ -63,13 +66,13 @@
                             <div class="menu-text"><b>TSURU</b></div>
                             <img src="asset/newyear1.jpg" alt="New Year 1">
                             <div class="menu-text">Orchid, Roses, Lily, Nandina Domestica, Pine, etc</div>
-                            <div class="menu-text">7800円</div>
+                            <div class="menu-text"><b>7800円</b></div>
                         </div>
                         <div class="products-img">
                             <div class="menu-text"><b>MIZUHIKI</b></div>
                             <img src="asset/newyear2.jpg" alt="New Year 2">
                             <div class="menu-text">Mum, Gerbera, Pine, Sarcandra - Glabra, etc</div>
-                            <div class="menu-text">5200円</div>
+                            <div class="menu-text"><b>5200円</b></div>
                         </div>
                     </div>
         
@@ -78,19 +81,19 @@
                             <div class="menu-text"><b>KOTOHOGI</b></div>
                             <img src="asset/newyear3.jpg" alt="New Year 3">
                             <div class="menu-text">Mum, Oliental Lily, Nandina Domestica, Pine, etc</div>
-                            <div class="menu-text">7000円</div>
+                            <div class="menu-text"><b>7000円</b></div>
                         </div>
                         <div class="products-img">
                             <div class="menu-text"><b>HATSUHARU</b></div>
                             <img src="asset/newyear4.jpg" alt="New Year 4">
                             <div class="menu-text">Sarcandra Glabra, Pinus - Palustris, Rose, etc</div>
-                            <div class="menu-text">5800円</div>
+                            <div class="menu-text"><b>5800円</b></div>
                         </div>
                     </div>
                 </div>
             </div>
         
-            <div class="mainmenu">
+            <div class="mainmenu" id="colorbackground">
                 <h2 id="valentine">Valentine</h2>
                 <div class="flower-menu">
                     <div class="responsive-menu">
@@ -98,13 +101,13 @@
                             <div class="menu-text"><b>ROSEHEART</b></div>
                             <img src="asset/valentine3.jpg" alt="Valentine 3">
                             <div class="menu-text">Heart Shaped 24 Red Roses</div>
-                            <div class="menu-text">7800円</div>
+                            <div class="menu-text"><b>7800円</b></div>
                         </div>
                         <div class="products-img">
                             <div class="menu-text"><b>RED AND PINK</b></div>
                             <img src="asset/valentine4.jpg" alt="Valentine 4">
                             <div class="menu-text">Red and Pink Color Cordinate with 3 Red Roses</div>
-                            <div class="menu-text">5200円</div>
+                            <div class="menu-text"><b>5200円</b></div>
                         </div>
                     </div>
         
@@ -113,33 +116,33 @@
                             <div class="menu-text"><b>CHOCOROSE</b></div>
                             <img src="asset/valentine1.jpg" alt="Valentine 1">
                             <div class="menu-text">Ferrero Rocher Chocolate 16pcs + 12 Red Roses</div>
-                            <div class="menu-text">8800円</div>
+                            <div class="menu-text"><b>8800円</b></div>
                         </div>
                         <div class="products-img">
                             <div class="menu-text"><b>PINK LADY</b></div>
                             <img src="asset/valentine2.jpg" alt="Valentine 2">
                             <div class="menu-text">Pink Flowers Basket</div>
-                            <div class="menu-text">6800円</div>
+                            <div class="menu-text"><b>6800円</b></div>
                         </div>
                     </div>
                 </div>
             </div>
-
+        
             <div class="mainmenu">
                 <h2 id="whiteday">White Day</h2>
-                <div class="flower-menu">
+                <div class="flower-menu" >
                     <div class="responsive-menu">
                         <div class="products-img">
                             <div class="menu-text"><b>WHITE LOVE</b></div>
                             <img src="asset/whiteday1.jpg" alt="white day 1">
                             <div class="menu-text">White Flowers Bouquet</div>
-                            <div class="menu-text">6800円</div>
+                            <div class="menu-text"><b>6800円</b></div>
                         </div>
                         <div class="products-img">
                             <div class="menu-text"><b>PINK AND RABBIT</b></div>
                             <img src="asset/whiteday2.jpg" alt="white day 2">
                             <div class="menu-text">Pink Roses and Eared Bunny</div>
-                            <div class="menu-text">6500円</div>
+                            <div class="menu-text"><b>6500円</b></div>
                         </div>
                     </div>
         
@@ -148,19 +151,19 @@
                             <div class="menu-text"><b>ROMANTIC TULIP</b></div>
                             <img src="asset/newyear3.jpg" alt="White Day 3">
                             <div class="menu-text">Tulips & Roses & Sweet Pea Arrangement</div>
-                            <div class="menu-text">5800円</div>
+                            <div class="menu-text"><b>5800円</b></div>
                         </div>
                         <div class="products-img">
                             <div class="menu-text"><b>PRETTY GIRL</b></div>
                             <img src="asset/newyear4.jpg" alt="New Year 4">
                             <div class="menu-text">Pink Roses, Carnations, Mum</div>
-                            <div class="menu-text">6500円</div>
+                            <div class="menu-text"><b>6500円</b></div>
                         </div>
                     </div>
                 </div>
             </div>
         
-            <div class="mainmenu">
+            <div class="mainmenu" id="colorbackground">
                 <h2 id="spring">Spring</h2>
                 <div class="flower-menu">
                     <div class="responsive-menu">
@@ -168,7 +171,7 @@
                             <div class="menu-text"><b>HINAO</b></div>
                             <img src="asset/spring1.jpg" alt="Spring 1">
                             <div class="menu-text">For Dolls' Festival!</div>
-                            <div class="menu-text">5500円</div>
+                            <div class="menu-text"><b>5500円</b></div>
                         </div>
                     </div>
         
@@ -177,12 +180,13 @@
                             <div class="menu-text"><b>SPRING SPECIAL</b></div>
                             <img src="asset/spring2.jpg" alt="Valentine 2">
                             <div class="menu-text">Send this gift of precious love!</div>
-                            <div class="menu-text">6800円</div>
+                            <div class="menu-text"><b>6800円</b></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
         
                 
 

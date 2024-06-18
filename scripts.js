@@ -1,6 +1,7 @@
 // scripts.js
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {        
+    
     document.getElementById('menu-icon').addEventListener('click', function() {
         var navLinks = document.getElementById('nav-links');
         if (navLinks.style.display === 'flex') {
@@ -60,6 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
     slider.addEventListener('mouseout', startAutoSlide);
 
     startAutoSlide();
+
+    
 
 });
 
