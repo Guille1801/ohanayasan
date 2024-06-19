@@ -13,6 +13,8 @@ html, body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+
 }
 
 /* common styles */
@@ -465,7 +467,7 @@ i{
     margin: 10px;
 }
 
-#newyear, #valentine, #popular, #spring, #whiteday{
+#newyear, #valentine, #popular, #spring, #whiteday, #top{
     scroll-margin-top: 120px; 
 
 }
@@ -687,131 +689,139 @@ i{
   }
 
 
+
 /*Payment Section*/
 
-.copyright{
-    display: block;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 50px;
+.paymentbackground{
+    background-image: url("asset/aboutus-image.jpg");
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    position: relative; /* Para posicionar el overlay */
+}
+
+.titlepayment {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 150px auto;
+}
+
+.titlepayment h2 {
+    margin-bottom: 20px;
     text-align: center;
-    color: #ffffff66;
+}
+
+.titlepayment p {
     font-size: 16px;
-    padding: 20px 0;
-    border-top: 1px solid #ddd;
+    line-height: 1.6;
+    color: #333;
+    text-align: left;
+    max-width: 800px;
 }
 
-#flex-container{
-  margin: 10px;
-  display: flex;
-  padding: 10px;
+.titlepayment h5{
+    color: #de214a;
 }
-.flex-item2{
-  border-radius: 6px;
-  margin: 6px;
-  width: 50px;
-  height: 30px;
-  background-image: url('https://aoyamaflowermarket-en.square.site/static/icons/payment-methods/mastercard.svg');
-    background-size: cover; /* or 'contain' */
+
+.titlepayment p span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.abcpayment {
+    color: red;
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+.bcpayment {
+    font-weight: 600;
+    color: #333;
+}
+
+.cdpayment {
+    color: #BD1DC8;
+    font-weight: 600;
+}
+
+.pp {
+    font-size: 16px;
+    color: #0056b3;
+    font-weight: 600;
+}
+
+.repayment, .mnpayment {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+#flex-containerpayment {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.flex-item1payment, .flex-item2payment, .flex-item3payment, .flex-item4payment, .flex-item5payment {
+    border-radius: 6px;
+    margin: 6px;
+    width: 50px;
+    height: 30px;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.flex-item1{
-  border-radius: 6px;
-  margin: 6px;
-  width: 50px;
-  height: 30px;
-  background-image: url('https://aoyamaflowermarket-en.square.site/static/icons/payment-methods/visa.svg');
-    background-size: cover; /* or 'contain' */
-    background-position: center;
-    background-repeat: no-repeat;
+.flex-item1payment {
+    background-image: url('https://aoyamaflowermarket-en.square.site/static/icons/payment-methods/visa.svg');
 }
 
-.flex-item2{
-  border-radius: 6px;
-  margin: 6px;
-  width: 50px;
-  height: 30px;
-  background-image: url('https://aoyamaflowermarket-en.square.site/static/icons/payment-methods/mastercard.svg');
-    background-size: cover; /* or 'contain' */
-    background-position: center;
-    background-repeat: no-repeat;
+.flex-item2payment {
+    background-image: url('https://aoyamaflowermarket-en.square.site/static/icons/payment-methods/mastercard.svg');
 }
 
-.flex-item3{
-  border-radius: 6px;
-  margin: 6px;
-  width: 50px;
-  height: 30px;
-  background-image: url('https://aoyamaflowermarket-en.square.site/static/icons/payment-methods/americanexpress.svg');
-    background-size: cover; /* or 'contain' */
-    background-position: center;
-    background-repeat: no-repeat;
+.flex-item3payment {
+    background-image: url('https://aoyamaflowermarket-en.square.site/static/icons/payment-methods/americanexpress.svg');
 }
 
-.flex-item4{
-  border-radius: 6px;
-  margin: 6px;
-  width: 50px;
-  height: 30px;
-  background-image: url('https://aoyamaflowermarket-en.square.site/static/icons/payment-methods/jcb.svg');
-    background-size: cover; /* or 'contain' */
-    background-position: center;
-    background-repeat: no-repeat;
+.flex-item4payment {
+    background-image: url('https://aoyamaflowermarket-en.square.site/static/icons/payment-methods/jcb.svg');
 }
 
-.flex-item5{
-  border-radius: 6px;
-  margin: 6px;
-  width: 50px;
-  height: 30px;
-  background-image: url('https://aoyamaflowermarket-en.square.site/static/icons/payment-methods/discover.svg');
-    background-size: cover; /* or 'contain' */
-    background-position: center;
-    background-repeat: no-repeat;
+.flex-item5payment {
+    background-image: url('https://aoyamaflowermarket-en.square.site/static/icons/payment-methods/discover.svg');
 }
 
-ab{
-  color: blue;
-  font-weight: 100;
+.titlepayment h3{
+    color: black;
+    margin: 20px;
 }
 
-p{
-  font-size: 16px;
+.img-order{
+    width: 100px;
+    height: 100px;
+    
 }
 
-abc{
-  color: red;
-  text-decoration: underline;
-  font-size: 13px;
+.orderdiv p{
+    justify-content: center;
+    margin: 20px;
+    text-align: center;
 }
 
-bc{
-  font-weight: 600;
+.orderdiv{
+    text-align: center;
+    margin: 20px;
 }
-
-cd{
-  color: #BD1DC8;
-}
-
-pp{
-  font-size: 16px;
-  color: blue;
-  font-weight: 600;
-}
-
-re{
-  color: red;
-}
-
-mn{
-  color: blue;
-  font-weight: 600;
-}
-
-
-
 
 /* Footer section */
 footer{
